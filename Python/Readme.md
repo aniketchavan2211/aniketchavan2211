@@ -1923,7 +1923,7 @@ Python has a set of built-in methods that you can use on lists.
 | `sort()` | Sorts the list |
 
 
-#### Tuples 
+### Tuples 
 
 Tuples are used to store multiple items in a single variable.
 
