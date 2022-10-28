@@ -13,7 +13,7 @@ It has influenced many popular language, especially **C++ ( Cpp )**.
 - C is considered to be "close to the computer," meaning we can program the computer to do precisely what we want. 
 **Portable:** -  Program written in C can be run on different types of machines with little or no modification.
 
-**Used for: **
+**Used for:**
 - For creating desktop applications.
 - For developing games.
 - For designing Operating System. 
@@ -66,7 +66,7 @@ int main() {
 
 `/ Comment /` used for Single - Line Comments 
 
-```
+```C
 /* Beginning of Multi-line Comment
 
 End of Multi-line Comment*/
@@ -83,17 +83,17 @@ Hello World
 ```
 **Running on Linux**
 1. First install package clang
-```
+```bash
 apt-get install clang
 ```
 
 2. compile c file
-```
+```bash
 clang file.c
 ```
 
 3. Execute c file
-```
+```bash
 ./a.out
 ```
 
