@@ -106,6 +106,7 @@ returntype functionName(parameters) {
   return 0;
 }
 ```
+**Example:**
 
 ```C
 #include <stdio.h>
