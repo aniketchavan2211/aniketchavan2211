@@ -125,7 +125,7 @@ Comments are lgnored by Compiler, Comments are not compiled, write a comment to 
 
 ##### Single-line Comments 
 
-`// Comments `you can one line comment, the line will be ignored by compiler, you can also comment the code.
+`// Comments` you can one line comment, the line will be ignored by compiler, you can also comment the code.
 
 but what if you want to comment more than 15 lines.
 You can add `//` at beginning of line not all.
@@ -149,14 +149,14 @@ Use for multi-line.
 #### Input / Output
 
 prinf() is use for ouput.
-```
+```C
 printf("Hi");
 ```
 
 Display `Hi` on screen.
 
 scanf() is use for input.
-```
+```C
 scanf("%d", &var);
 ```
 take input as number and store in `var` variable name.
@@ -206,7 +206,7 @@ decimal number with 15 decimal places 0.123456789012345
 
 ##### print Variables
 
-```
+```c
 int varname = 23;
 printf("%d", varname);
 ```
@@ -214,7 +214,7 @@ printf("%d", varname);
 first initialise variable then use printf function 
 adding `"%d"` as digit as datatype. specifying the variable.
 
-``` 
+``` c
 char varname = 'A';
 printf("use as %c", varname);
 ```
@@ -258,7 +258,7 @@ if (a > 2) {
 ```
 
 **Output:**
-```
+```c
 a is less than 2
 ```
 
@@ -269,6 +269,7 @@ What if you need to repeat the task/function/...
 We use Loops for it.
 
 ##### Types of Loops 
+
 - for loops
 - while loops
 - do... while Loops
@@ -302,13 +303,14 @@ for (i = 1; i < 6; i++){
 3. **increament** (i++) value will increase 1 time each loop execute. 
 
 **Output:**
-```
+```c
 Hello
 Hello
 Hello
 Hello
 Hello
 ```
+
 ###### While loops
 
 **Syntax:**
@@ -320,7 +322,7 @@ while (condition) {
 ```
 
 **Example:**
-```
+```c
 int a = 1;
 while (a < 6) {
   // Code to be executed
@@ -337,7 +339,7 @@ while (a < 6) {
 `a++`.
 
 **Output:**
-```
+```c
 Hi // i = 1
 Hi // i = 2
 Hi // i = 3
@@ -375,11 +377,11 @@ size
 
 **Arrays Declaration**
 
-```
+```c
 datatype arrayname [arraysize];
 ```
 
-```
+```c
 int array[5];
 ```
 
@@ -387,7 +389,7 @@ int array[5];
 
 means giving value to an arrays or assigning value to an array.
 
-```
+```c
 array[0] = 5;
 array[1] = 6;
 array[2] = 7;
@@ -397,7 +399,7 @@ array[5] = 9;
 ```
  
  **One line**
-```
+```c
 int array[5] = {5, 6, 7, 8, 9};
 ```
 
@@ -413,7 +415,7 @@ for (int i = 0; i < 5; i++) {
 ```
 
 **Output**
-```
+```c
 Value at the element 0 is: 1 
 Value at the element 1 is: 2
 Value at the element 2 is: 3
@@ -435,7 +437,7 @@ returntype functionName (parameters) {
 
 `returntype` : if you want your function to return some values as a result of the task, the datatype of this return value will com here. 
 
-`void`: If your function doesn't return any value, then `void` is use.
+`void`: If your function doesn't return any value, then **void** is use.
 
 `functionName`: give function a name. 
 
@@ -457,7 +459,7 @@ int addition (int num1,int num2) {
 ```
 
 to call a function, addition function.
-```
+```c
 int a = 10;
 int b = 20;
 int c;
