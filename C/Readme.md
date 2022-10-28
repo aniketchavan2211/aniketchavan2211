@@ -275,7 +275,7 @@ We use Loops for it.
 - while loops
 - do... while Loops
 
-###### **For loops**
+###### For loops
 
 **Syntax:**
 ```c
