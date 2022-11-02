@@ -42,3 +42,16 @@ Clients - VNC Viewer
 | localhost:1 |
 | localhost:5901 |
 | 127.0.0.1:5901 |
+
+
+
+Simple Window
+```python
+import tkinter
+
+# print(dir(tkinter.Tk))
+
+win = tkinter.Tk(screenName=None, baseName=None, className='Tk', useTk=1)
+
+win.mainloop()
+```
