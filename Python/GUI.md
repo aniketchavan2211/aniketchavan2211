@@ -33,7 +33,7 @@ vncserver -list
 
 ```bash
 # Kill Display
-vncserver -kill localhost:1
+vncserver -kill upda:1
 ```
 
 Clients - VNC Viewer
