@@ -1,27 +1,27 @@
 ## Tkinter - Python GUI Module
 
 On termux, Install tkinter module
-```
+```bash
 apt-get install python python-tkinter
 ```
 
 ## Desktop Environment
 [Termux Wiki - Desktop Environment](https://wiki.termux.com/wiki/Graphical_Environment)
-```
+```bash
 pkg install x11-repo
 ```
 
-```
+```bash
 pkg install tigervnc
 ```
 
-```
+```bash
 vncserver -localhost
 # set password
 ```
 
 Set DISPLAY ENVIRONMENT Variable
-```
+```bash
 export DISPLAY="1"
 ```
 
