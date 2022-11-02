@@ -25,6 +25,17 @@ Set DISPLAY ENVIRONMENT Variable
 export DISPLAY="1"
 ```
 
+
+```bash
+# List Display
+vncserver -list
+```
+
+```bash
+# Kill Display
+vncserver -kill localhost:1
+```
+
 Clients - VNC Viewer
 | Address |
 | ------- |
