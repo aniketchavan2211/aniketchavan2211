@@ -1,4 +1,5 @@
 ![ JavaScript ](https://github.com/aniketchavan2211/aniketchavan2211/blob/master/Images/js.png)
+
 ## JavaScript
 
 ### Introduction
@@ -58,3 +59,46 @@
  */
  ```
 
+### Variables and Types 
+
+Variables are like containers we can store values in them,and use any time need.
+
+```
+var variable_name = "value"
+var  name = "Alex"
+```
+
+To define variable `var` keyword is use.
+`name` is variable name `=` is to assigned a variable a name
+`"Alex"` is a value of name variable.
+texts and numbers enclosed with double quotes `""` are
+strings.
+
+to assigned variable a number
+```js
+var age = 18 
+```
+now, To define varaibles we use,
+
+- `let`
+- `const`
+
+`let` keyword is use when we need to update or change value of variable .
+
+```javascript
+let name = "Alex";
+name = "Alexa";
+```
+
+to update variable don't use `let` keyword again
+it will throw an error.
+
+What if you don't want to change values of variables.
+`const` keyword is use, means constant never change/update variable values.
+
+javascript is case-sensitive language. `NAME` and `name`
+is different.
+
+```
+const age = 1;
+```
