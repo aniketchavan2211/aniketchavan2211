@@ -1920,7 +1920,6 @@ Python has a set of built-in methods that you can use on lists.
 | `reverse()` |	Reverses the order of the list |
 | `sort()` | Sorts the list |
 
-
 ### Tuples 
 
 Tuples are used to store multiple items in a single variable.
@@ -1966,7 +1965,6 @@ print(len(tuple1)) # length 4
 print(max(tuple1)) # maximum value = 4
 print(min(tuple1)) # minimum value = 1
 ```
-
 
 ### Dictionary 
 
@@ -2415,7 +2413,6 @@ Python has a set of built-in methods that you can use on lists/arrays.
 | `remove()` | Removes the first item with the specified value |
 | `reverse()` | Reverses the order of the list |
 | `sort()` | Sorts the list |
-
 
 ### Functions
 
