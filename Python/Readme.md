@@ -52,7 +52,7 @@ Comments can be used to explain Python code.
 Comments can be used to make the code more readable
 Comments can be used to prevent execution when testing code
 
-### Single-Line Comments
+#### Single-Line Comments
 
 Comments starts with a `#` (hash), amd python
 will ignore them :
@@ -1713,8 +1713,6 @@ print(len(thislist))
 ```
 3
 ```
-
-### 
 
 #### Check Datatype
 
