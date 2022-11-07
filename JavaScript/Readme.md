@@ -102,3 +102,214 @@ is different.
 ```
 const age = 1;
 ```
+
+end the statement with `;` semicolon.
+
+storing `true` and `false`.
+```js
+let name = true;
+```
+
+```js
+let name = "true"
+```
+Both are differnt first one true boolean value but second one is string.
+
+### Math calulation
+```js
+let first_num = 1;
+let second_num = 2;
+
+let result = first_num + second_num;
+console.log(result) // use to on console
+// document.write use to display on html page
+```
+
+### Operator
+
+#### Arithmetic Operator
+- Addition `+`
+- Substraction `-`
+- Multiplication `*`
+- Division `/`
+- Modulus (Division Remainder) `%`
+
+#### Comparison Operator
+- Equality  `==`
+- InEquality `!=` 
+
+#### Logical Operator
+- and `&&`
+- or  `||`
+
+```js
+let first_num = 1;
+let second_num = 2;
+
+result = first_num == second_num // false
+result = first_num != second_num // true
+result = first_num == second_num and first_num != second_num // false
+result = first_num == second_num or first_num != second_num // true 
+```
+
+### Decision making
+
+**Syntax:**
+```js
+if (condition) {
+  // code to be executed
+}else {
+  // code to be executed
+}
+```
+
+**Example:**
+```js
+let x = 1;
+let y = 2;
+
+if (x > y) {
+  document.write("X is greater than Y")
+}else {
+  document.write("X is less than Y")
+}
+```
+
+**Output:**
+```js
+X is less than Y 
+```
+
+### Array 
+
+```js
+let array_items = ["item1", "item2", "item3"]
+```
+
+This ia invalid, storing different datatype values in same array throw an error.
+
+```js
+let array = ["text", 1, 1.02];
+// instead do This
+
+let array_string = ["Alex", "Alexa", "McQueen", "Matter"];
+let array_num = [1, 2, 3, 4, 5];
+
+```
+
+#### Accessing Array 
+
+Index is position of string or number
+```js
+let array_name = ["item1", "item2"];
+
+document.write(array_name[index]);
+document.write(array_name[0]); // item1
+document.write(array_name[1]); // item2
+```
+
+```js
+let students = ["Alex", "Alexa", "Swanand", "Amar"];
+
+document.write(student[0]); // Alex
+document.write(student[1]); // Alexa
+document.write(student[2]); // Swanand
+document.write(student[3]); // Amar
+```
+
+### Loops
+
+- for Loops
+- do.. while loop 
+ 
+#### for loop 
+
+**Syntax:**
+```js
+for (initial value; condition; increment) {
+  // rest of code
+}
+```
+
+```js
+let i;
+for (i = 0; i<10; i++)  {
+  document.write("Hello, World!");
+}
+```
+
+#### do.. while loop
+
+loops executed once then checks the condition for 
+second time if false then loop terminate
+or keeps running until condition no longer satified
+
+**Syntax**
+```js
+do {
+  // code to be executed
+  i = i +1 // increment
+}while (condition);
+```
+
+```js
+let i = 1;
+do {
+  document.write("Hello, World");
+  i = i + 1
+}while (i < 10);
+```
+
+### Dialog Boxes
+
+- Alert Box
+- Prompt Box
+- Confirm Box
+
+#### Alert Box
+
+```js
+alert("Alert Waring Message");
+```
+
+#### Prompt Box
+
+```js 
+prompt("What's is your name"); 
+```
+
+#### Confirm Box
+
+```js 
+confirm("Confirm Message");
+```
+
+### Functions
+
+**Syntax:**
+```js
+function function_name(parameter1, parameter2) {
+  // Code to be Executed
+}
+```
+
+Calling function when needed.
+
+```js
+function_name(parameter1, parameter2);
+```
+
+**Example:**
+```js
+function add(num1, num2) {
+  let result = num1 + num2;
+  document.write(result);
+}
+
+add(3, 4);
+```
+
+**Output:**
+```js
+7
+```
