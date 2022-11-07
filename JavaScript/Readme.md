@@ -115,7 +115,7 @@ let name = "true"
 ```
 Both are differnt first one true boolean value but second one is string.
 
-### Math calulation
+### Math calculation
 ```js
 let first_num = 1;
 let second_num = 2;
@@ -231,6 +231,7 @@ for (initial value; condition; increment) {
 }
 ```
 
+**Example:**
 ```js
 let i;
 for (i = 0; i<10; i++)  {
@@ -252,6 +253,7 @@ do {
 }while (condition);
 ```
 
+**Example:**
 ```js
 let i = 1;
 do {
@@ -275,6 +277,7 @@ alert("Alert Waring Message");
 #### Prompt Box
 
 ```js 
+prompt("Prompt Message"); 
 prompt("What's is your name"); 
 ```
 
