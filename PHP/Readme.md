@@ -1,5 +1,7 @@
 ## PHP
 
+### Introduction 
+
 In 1995, PHP was created by Rasmus Lerdorf, PHP stands for HyperText Preprocessor.
 originially named as Personal Home Page. Php is a general-purpose language work with HTML
 
@@ -31,9 +33,16 @@ the file.
 
 ### Comments
 
+Comments are used to ignored by php interpreter, so code can comment or we can describe the code can comment it. so others programmers will know to we know that code what is does.
+
+
 ```PHP
 // Single-Line Comments
+```
 
+To comment multiple ;ines we used `/*` at beginning and `*/` at the end.
+
+```
 /* 
 Multi 
 Line
@@ -51,8 +60,12 @@ Comments
 ```
 
 `<?php ` is opening tag and `?>` is closing tag
-save file as `index.php` host on Apcache Web server.
+save file as `index.php` host on web server.
 
+**PHP Development server:**
+```bash
+php -S 127.0.0.1:8000 -t <directory root>
+```
 
 **Example:**
 ```PHP
@@ -63,7 +76,6 @@ echo "Hello World!";
 
 `echo` is command or function use to display output on screen.
 at last of statements end with `;` (semicolon).
-
 
 **Example:**
 ```php
@@ -79,11 +91,21 @@ at last of statements end with `;` (semicolon).
 
 ### Variable and DataTypes 
 
+Variables are like containers or box to store value.
+to store text or numbers, etc we use varaibles.
+
+to declared variable first before named `$` dollor sign,
+then `variable_name`, `=` assignment operator, and value.
+strings those enclosed with `"double"` or `'single quotes'`.
+values can be numbers (Don't use quotes for numbers, quotes numbers are strings. you can't manipulate.)
+
 ```
 $variable_name = "value";
 $num = 1
 echo "specify $variable_name";
 ```
+
+assign `1` to `num`, `1` is numeric value assign to variable name `num`.
 
 #### DataTypes
 
@@ -114,6 +136,8 @@ external to PHP. it also includes NULL that holds no value at all.
 
 ### Operators 
 
+#### Arithmetic Operators
+
 ```php
 <?php
 $x = 43:
@@ -136,7 +160,9 @@ echo($x % $y), "<br>";  // modulous
 0
 ```
 
-Concatenate operator (`.`)
+**Concatenate operator**
+
+To join two variable use Concatenate operator period / dot / full stop `.`.
 
 **Example:**
 ```php
@@ -146,7 +172,40 @@ $play = $n.$a;
 echo $play;
 ```
 
+#### Assignment Operators
+
+| Operators |  Description |
+| --------- | ------------ |
+| a = b | The variable  on the left gets the value of the variable on the right |
+| a += b |  Same as a=a+b. Adds the value on the left of the operand to the value on the right |
+| a -= b |  Same as a=a-b. Subtracts the value on the left of the operand to the value on the right |
+| a \*= b |  Same as a=a\*b. Multiple the value on the left of the operand to the value on the right |
+| a /= b |  Same as a=a/b. Divide the value on the left of the operand to the value on the right |
+| a %= b |  Same as a=a%b. Display the modulous of the value on the left of the operand to the value on the right |
+
+#### Comparsion Operators
+
+| Operators | Name |
+| --------- | ---- |
+| `==` | Equal to |
+| `!=`, `<>` | Not Equal to |
+| `===` | Identical to |
+| `!==` | Not Identical to |
+| `>` | Greater than |
+| `>=` | Greater than or equal to |
+| `<` | less than |
+| `<=` | less than or equal to |
+
 #### Logical Operators
+
+| Operators | Name |
+| --------- | ---- |
+| `and` | And |
+| `or` | Or |
+| `xor` | Xor |
+| `&&` | And |
+| `||` | Or |
+| `!` | Not |
 
 ```php
 $x = 200;
@@ -206,6 +265,8 @@ or
 
 ### Decision making
 
+What if Computer need to take decision, we can specify the condition, if condition is true then then that code will executed or else condition is false then specify task will formed. 
+
 #### if..else
 
 **Syntax:**
@@ -234,7 +295,6 @@ if (conditon1) {
 
 #### Switch case
 
-
 **Syntax:**
 ```php
 
@@ -259,7 +319,11 @@ switch (expression/variable) {
 
 ### Loops
 
+What if we need of repeating same task many times so, we use loops to performed.
+
 #### for Loops
+
+if we know how many times we need to executed the task we used for loop.
 
 **Syntax:**
 ```php
@@ -269,6 +333,8 @@ for (initialization; condition; increment/decrement) {
 ```
 
 #### while Loops
+
+what if don't know how many times loop will run, but know the condition, make a use of while loop.
 
 **Syntax:**
 ```php
@@ -281,6 +347,8 @@ while (condtion) {
 
 #### do.. while Loops
 
+do.. while loop will executed atleast once.
+
 **Syntax:**
 ```php
 do {
@@ -289,6 +357,8 @@ do {
 ```
 
 ### Arrays 
+
+Arrays are variable that store multiple values but same data type.
 
 **Syntax:**
 ```php
@@ -335,6 +405,8 @@ Tennis
 
 #### foreach Loops
 
+display values using foreach loop.
+
 ```
 foreach ($array as $value) {
   // code to be executed
@@ -342,6 +414,8 @@ foreach ($array as $value) {
 ```
 
 ### Functions
+
+once once code is written, no need to write code again.
 
 **Syntax:**
 ```php
