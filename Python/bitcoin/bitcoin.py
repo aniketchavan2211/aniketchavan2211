@@ -1,26 +1,31 @@
-#!/usr/bin/env python3
-import hashlib
+from hashlib import sha256
+import time
 
-# print(hashlib.sha256("Hello World".encode()).hexidigest())
+MAX_NONCE = 100000000000
 
-NONCE_LIMIT = 100000000000
+def SHA256(text):
+    return sha256(text.encode("ascii")).hexdigest()
 
-zeroes = 8
+def mine(block_number, transactions, previous_hash, prefix_zeros):
+    prefix_str = '0'*prefix_zeros
+    for nonce in range(MAX_NONCE):
+        text = str(block_number) + transactions + previous_hash + str(nonce)
+        new_hash = SHA256(text)
+        if new_hash.startswith(prefix_str):
+            print(f"Yay! Successfully mined bitcoins with nonce value:{nonce}")
+            return new_hash
 
-def mine(block_number, transactions, previous_hash):
-  for nonce in range (NONCE_LIMIT):
-    base_text = str(block_number) + transactions + previous_hash + str(nonce)
-    hash_try = hashlib.sha256(base_text.encode()).hexdigest()
-    if hash_try.startswith('0' * zeroes):
-      print(f"Found Hash with Nonce: {nonce}")
-      return hash_try
-  return -1
+    raise BaseException(f"Couldn't find correct has after trying {MAX_NONCE} times")
 
-block_number = 24
-transactions = "5tr65r6dfw3yedf3"
-previous_hash = "trf7tfdi724gfi74r7fdzfd"
-
-# combined_text = str(block_number) + transactions + previous_hash + str(107617)
-# print(hashlib.sha256(combined_text.encode()).hexdigest())
-
-mine(block_number, transactions, previous_hash)
+if __name__=='__main__':
+    transactions='''
+    Dhaval->Bhavin->20,
+    Mando->Cara->45
+    '''
+    difficulty=4 # try changing this to higher number and you will see it will take more time for mining as difficulty increases
+    start = time.time()
+    print("start mining")
+    new_hash = mine(5,transactions,'0000000xa036944e29568d0cff17edbe038f81208fecf9a66be9a2b8321c6ec7', difficulty)
+    total_time = str((time.time() - start))
+    print(f"end mining. Mining took: {total_time} seconds")
+    print(new_hash)
