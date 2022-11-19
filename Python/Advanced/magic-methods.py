@@ -18,7 +18,7 @@ class Vector():
   def __call_(self):
     print("Hello, This is a called")
 
-v1 = vector(10, 20)
+v1 = Vector(10, 20)
 v2 = Vector(50, 60)
 
 # v3 = v1 + v2 is not working so used magic methods
