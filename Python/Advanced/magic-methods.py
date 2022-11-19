@@ -20,7 +20,7 @@ class Vector():
 
 v1 = Vector(10, 20)
 v2 = Vector(50, 60)
-
+v3 = v1 + v2
 # v3 = v1 + v2 is not working so used magic methods
 
 print(v3.x)
@@ -30,4 +30,4 @@ print(v3.y)
 
 print(v3)
 
-print(len(v3)) # 10
+# print(len(v3)) # 10
