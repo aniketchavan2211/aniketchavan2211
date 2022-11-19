@@ -27,6 +27,9 @@ logger.setLevel(logging.DEBUG)
 handler = logging.FileHandler("logs.log")
 handler.setLevel(logging.INFO)
 
+formatter = logging.Formatter("%(levelname)s - %(asctime)s: %(message)s ")
+handler.setFormatter(formatter)
+
 logger.addHandler(handler)
 
 logger.debug("Debug Message")
