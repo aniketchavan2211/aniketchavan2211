@@ -358,7 +358,7 @@ emoji enities code decimal value : 173634
 
 ```
 
-### new html5 tags
+### new HTML5 tags
 
 ```
 <nav> </nav>
