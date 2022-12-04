@@ -63,9 +63,11 @@ touch etc/apache2/extra/php_module.conf
 
 No need to add something in conf
 
-Add text to `$PREFIX/share/apache2/default-site/htdocs/index.php`
+7. Add text to `$PREFIX/share/apache2/default-site/htdocs/index.php`
 ```php
 <?php
  echo "Hello, php"; 
 ?>
 ```
+8. Open browser, enter localhost:8080 url
+ A text saying 'Hello, php' will appear if successful.
