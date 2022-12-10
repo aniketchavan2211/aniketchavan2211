@@ -33,7 +33,7 @@ msg = "Hello" # message
 
 with open("signature", "rb") as f: # make changes wb > rb if already signature exists
   # f.write(signature)
-  signature = f.read() # reading sugnature file
+  signature = f.read() # reading signature file
 
 ## Verifying
 print(rsa.verify(msg.encode(), signature, public_key)) # if prints SHA-256 then it auenticated/verified
