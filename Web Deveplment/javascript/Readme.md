@@ -149,9 +149,59 @@ var b = String(a) // typecasting a variable as string(text "86" )
 document.write(46 + a) // 4686 a is string and string and numbers can't be added.
 ```
 
+### Datatypes & Variables
 
+data is pieces of text or numbers, etc
+data which add meaning is called infomation.
 
+Datatypes : multiple forms of data.
 
+#### Primitive: 
+1. numbers
+2. string
+3. null
+4. boolean
+5. undefined
 
+#### Non-primitives: 
+1. arrays
+2. object
 
+**Variables** is like container unit o box which help
+to store text, numbers, boolens values, etc.
 
+`var` is keyword use to defined variables.
+
+```js
+var variable_name = value;
+```
+
+- don't use number or special metacharacters(*&) for first variable name
+```js
+var 1 = 9;
+var @ = 8;
+```
+throws an error
+
+```js
+var number = 32; // number
+document.write("<br>") // <br> break tag, add a new line 
+
+var string = "23"; // string
+var null1 = null; // object
+var boolean = true; // boolean
+var undefined1;
+
+// non-primitives
+var brand = ['a', 'A', 1]; // array but typeof object
+alert("display " + brand[1]); // a
+
+var mycar = {brand: "a", var1: 'value1', num: 1}// object
+alert("display " + mycar.brand); // a
+```
+
+### input & output
+
+```js
+
+```
