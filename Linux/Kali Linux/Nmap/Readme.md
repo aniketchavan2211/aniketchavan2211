@@ -183,3 +183,46 @@ ACK scan helps to finds the firewall enabled or not and rule set.
 - close filtered
 - unfiltered
 
+#### open 
+
+Machine A sends **SYN packet** to Machine B
+Machine B reply with **SYN + ACK packets** To Machine A
+Nmap detect that port is open, because Machine A receive SYN + ACK packet from Machine B.
+
+#### closed
+
+Machine A sends **SYN packet** to Machine B
+Machine B reply with **RST + ACK packet**.
+
+Machine B has closed port so sends RST + ACK flag.
+
+```
+# root user / superuser
+sudo nmap -p 3389,22 scanme.nmap.org
+# 22 open ssh
+# 3389 closed ms-wbt-server
+```
+Machine A with root privilieges sends ping request, SYN - 443, ACK - 80, timestamp request and SYN packet to 3389, 22 
+Machine B reply with ping reply, timestamp reply, RST + ACK flag on 443, RST flag on 80, and RST + ACK on 3389, SYN + ACK on 22
+Machine A sends RST flag on port 22.
+
+```bash
+# local user / regular user
+nmap -p 3389,22 scanme.nmap.org
+# 22 open ssh
+# 3389 closed ms-wbt-server
+```
+
+**host discovery**
+Machine A sends SYN port 80 and SYN port 443
+Machine B reply with RST + ACK on port 443 means closed, and SYN + ACK on 80 means open port
+Machine A sends ACK, RST + ACK on 80 closed tyhe connection
+
+**request for 3389 and 22 ports**
+Machine A sends SYN on port 3389, 22
+Machine B reply with SYN + ACK on 22 means open and 
+Machine A sends ACk on 22
+Machine B reply with RST + ACK on 3389
+Machine A sends RST + ACK on 22
+
+ 
