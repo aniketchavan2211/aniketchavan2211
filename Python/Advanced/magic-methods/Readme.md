@@ -1,6 +1,6 @@
 ##  Magic Methods
 
-**Dundar -> __abc__**
+**Dunder -> __abc__**
 
 ### Object and Classes
 
