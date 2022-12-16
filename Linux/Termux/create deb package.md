@@ -71,3 +71,8 @@ after installed
 change script permission of script inside `/bin`
 directory.
 
+## to extract deb files
+
+```
+ar x deb-file
+```
