@@ -91,6 +91,7 @@ and reply with ACK.
 ### checksums
 
 to check data is modified during transfer.
+simply to check integity.
 
 PoH + TCP + Data = checksum
 
@@ -98,3 +99,11 @@ value with packets sent.
 receiver passwd through hash function 
 compare the output of checksum value match with
 now passed packets hash function value.
+
+**PoH: Pseudo header**
+- source ip
+- destination ip
+- zeros
+- protocol
+- tcp length
+
