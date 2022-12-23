@@ -5,7 +5,7 @@ class IDepartment(metaclass=ABCMeta):
 
   @abstractmethod
   def __init__(self, emloyees):
-    """ Implement in child class  """
+    """ Implement in child class """
 
   @abstractstaticmethod
   def print_department():
@@ -49,6 +49,7 @@ dept1 = Accounting(200)
 dept2 = Development(170)
 
 parent_dept = ParentDepartment(30)
+
 parent_dept.add(dept1)
 parent_dept.add(dept2)
 
