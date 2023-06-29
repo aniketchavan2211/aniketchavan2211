@@ -6,7 +6,36 @@ import speech_recognition as sr
 import os
 import webbrowser
 import openai
+from config import apikey
 import datetime
+import random
+
+# AWS Code whisper 
+
+chatStr = ""
+def chat(prompt, chatStr):
+  global chatStr
+  openai.api_key = apikey
+  text = f"OpenAI response for promot: {prompt} \n"
+  prompt = f"Tony: {prompt}\n Jarvis"
+  response = openai.Completion.create(
+    model="text-davici-003",
+    prompt=chatStr,
+    temperature=0.7,
+    max_token=256,
+    top_p=1,
+    frequency_penalty=0,
+    presence_penalty=0 
+) 
+  # todo: Wrap this in try catch block
+  # print(response["choices"[0]["text"])
+  text += response["choices"][0]["text"]
+  if not os.path.exists("Openai"):
+    os.mkdir("Openai")
+  
+  # with open(f"Openai/prompt- {random.ranint(1, 6262737373)}",  "w") as f:
+  with open(f"Openai/{''.join(prompt.split('intelligence')[1:]).strip()}.txt", "w") as f:
+    f.write(text)
 
 def say(text):
   os.system(f" say {text} ")
@@ -39,12 +68,18 @@ if __name__ == '__main__':
         musicPath = "Path/to/Music"
         os.system(f"open {musicPath}")
       
-    if "the time" in query:
+    elif "the time" in query:
         musicPath = "Path/to/Music"
         strfTime = datetime.datetime.now().strftime("%H:%M:%S")
         say(f"time is {strfTime}")
         
-    if "open facetime".lower()  in query.lower():
+    elif "open facetime".lower()  in query.lower():
       os.system(f"open /System/Application/FaceTime.app")
-      
+    
+    elif "Using artificial intelligence".lower() in query.lower():
+      ai(prompt=query)
+    
+     else: 
+       chat(query, chatStr)
+       
   # say(query)
