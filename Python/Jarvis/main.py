@@ -13,7 +13,7 @@ import random
 # AWS Code whisper 
 
 chatStr = ""
-def chat(prompt, chatStr):
+def chat(prompt):
   global chatStr
   openai.api_key = apikey
   text = f"OpenAI response for promot: {prompt} \n"
@@ -79,7 +79,7 @@ if __name__ == '__main__':
     elif "Using artificial intelligence".lower() in query.lower():
       ai(prompt=query)
     
-     else: 
+    else: 
        chat(query, chatStr)
        
   # say(query)
