@@ -20,6 +20,8 @@ To write ruby program we need and any editor, In Windows, RubyWin (Ruby Integrat
 
 All files will have '.rb' as extension so rename any ruby file as 'file1.rb'
 
+#### Hello World
+
 ```ruby
 #!/usr/bin/ruby -w
 puts "Hello, Ruby!";
@@ -64,3 +66,101 @@ Initializing the program
 This is a main program 
 End of the program 
 ```
+
+### Variables
+
+Variables are like containers store values like 
+strings, integers, floating-point numbers(decimal number). Variables are memory locations. These hold any data to be used by any program.
+
+```ruby
+name="John"
+```
+
+`name` is a variable that holds and store value `John`.
+
+**Types of Variables**:
+
+1. Global Variables
+2. Instance Variables
+3. Class Variables
+4. Local Variables
+5. Constants
+
+#### Global Variables
+
+Variables begin with `$`, Uninitiated global variable have the value nil and produce warnings with the `-w` options.
+
+Assignment to global variables alters the globalisation status
+
+it is not recommended to use global variables.
+
+They make programs cryptic.
+
+#### Instance Variables 
+
+Instance variables begins with `@`.
+
+Uninitialized instance variables have the value nil and produce warnings with the `-w` options.
+
+#### Class variables
+
+Class Variables begin `@@`.
+It must be initiated before they can be used in methods definitions.
+
+Referencing an uninitialized class variable produces an error.
+
+Class Variables are shared among descendants of the class or module in which the class variables are defined.
+
+Overriding class variables produces warnings with the `-w` option.
+
+#### Local Variables 
+
+Local variables begins with a lowercase letter or `_`.
+The scope of a local variables ranges from class, module, def or from a block's opening braces to its close brace{}. 
+
+When an uninitiated as a call to a method that has no arguments.
+It is interpreted as a call to a method that has no arguments. 
+The variables start to exist until the end of the current scope is reached. 
+
+The lifetime of local variables is determined when Ruby parses the program. In the above examples are id, name, and addr.
+
+#### Constants 
+
+Constants begins with an uppercase letter.
+
+Constants defined within a class or module can be accessed from within that class or module.
+
+Those defiend outside a class or module can be acccessed globally.
+
+Constants may not be defined within methods.
+Referencing an uninitialized constant produces an error.
+
+Making an assignment to a constant that is already initized produces a warning.
+
+#### Pseudo-Variables
+
+They are special variables that have the appearance of local variables but behave like constants.
+
+- `self`: The receiver object of the current method.
+- `true`: Value representing true.
+- `false`: Value representing false.
+- `nil`: Value representing undefined.
+- `__FILE__`: The name of the current source file.
+- `__LINE__`: Thr current line number in the source file.
+
+You cannot assign any value to these variables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

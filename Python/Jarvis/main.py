@@ -17,7 +17,7 @@ def chat(prompt):
   global chatStr
   openai.api_key = apikey
   text = f"OpenAI response for promot: {prompt} \n"
-  prompt = f"Tony: {prompt}\n Jarvis"
+  chatStr += f"Tony: {query}\n Jarvis"
   response = openai.Completion.create(
     model="text-davici-003",
     prompt=chatStr,
@@ -29,9 +29,8 @@ def chat(prompt):
 ) 
   # todo: Wrap this in try catch block
   # print(response["choices"[0]["text"])
-  text += response["choices"][0]["text"]
-  if not os.path.exists("Openai"):
-    os.mkdir("Openai")
+  chatStr += f"{response["choices"][0]["text"]
+  return response["choices"][0]["text"]
   
   # with open(f"Openai/prompt- {random.ranint(1, 6262737373)}",  "w") as f:
   with open(f"Openai/{''.join(prompt.split('intelligence')[1:]).strip()}.txt", "w") as f:
