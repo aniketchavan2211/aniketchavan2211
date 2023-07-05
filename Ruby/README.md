@@ -150,17 +150,81 @@ They are special variables that have the appearance of local variables but behav
 
 You cannot assign any value to these variables.
 
+### Math Operations
 
+An operator is a symbol. It represents an operation to be performed with one or more operands. Operators are the foundation of any programming language. Operators allow us to perform different kinds of operations an operands.
 
+#### Types of Operators
 
+- Arithmetic Operators
+- Comparsion Operators 
+- Logical Operators 
+- Assignment Operators
+- Bitwise Operators
+- Ternary Operators
+- Range Opeartors
+- Defined? Operators
+- Dot `.` and Double Colon `::` Operators
 
+##### Arithmetic Operators
+These are used to perform arithmetic/mathematical Operations an operands.
 
+- Addition(`+`): Operators adds two operands. for ex. x+y.
+- Subtraction('-'): Operators subtracts two operands.  for ex. x-y.
+- Multiplication(`*`): Operators multiples two operands. for ex. x*y.
+- Division(`/``): Operators divides the first operands by the second. for ex. x/y.
+- Modulus`(%`): Operators returns the remainder when the first operands is divided by the second. for ex. x%y.
+- Exponent(`**`): Operators returns exponential(power)
+of the o
 
+##### Comparsion Operators 
 
+Comparsion operators or Relational operators are used for comparison of two values. 
 
+- Equal To(`==`): operators checks whether the two given operands are equal or not. if so, it returns `true`. Otherwise it return false. for eg. `5==5` will return `true`.
 
+- Not Equal To(`!=`): operators checks whether the two given operands are equal or not. if not, it return true. Otherwise, it return `false`. It is the exactly boolean complement of the `==` operators. for eg. `5!=5` will return `false`.
 
+- Greater than(`>`): operators checks whether the first operands is greater than the second operands. if so, it return `true`. Otherwise it return `false`. for eg. `6>5` will return `true`.
 
+- Less than(`<`): operators checks whether the first operands is lesser than the second operand. if so, it returns true. Otherwise it return `false`, for eg. `6<5` will return `false`.
 
+- Combined combination(`<=>`): operators return `0` when first operands equal to second, return `1` when first operands is greater than second operands, and return `-1` when first operator is less than second operands.
 
+- Case Equality Operator(`===`): It will test equality in case statements. 
 
+- `eql?`: This operator returns true if the receiver and argument have both the same type and equal values.
+ 
+- `Equal?` : This operators return true if it the receiver and receiver and arguments have the same object id.
+
+#### Comments 
+
+Comments are lines of annotation within Ruby code that are ignored at runtime.
+
+A single-line comments starts with # character and they extent form # to the end of the line as follows:
+
+```ruby 
+#!/usr/bin/ruby -w
+# This is a single line comment.
+puts "Hello, Ruby!"
+```
+
+When executed, the above program produces the following result:
+```ruby 
+Hello, Ruby!
+```
+
+You can comment multiple lines using `=begin` and `=end` syntax as follows:
+```ruby 
+#!/usr/bin/ruby 
+puts "Hello, Ruby!"
+=begin
+this is multi-line comment and can spwan as many lines as you like.
+But =begin and =end should come in the first line only.
+=end
+```
+
+When executed, the above program produces the following result:
+```
+Hello, Ruby!
+```
