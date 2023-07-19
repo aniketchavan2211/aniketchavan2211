@@ -199,6 +199,7 @@ Comparsion operators or Relational operators are used for comparison of two valu
 
 #### Comments 
 
+##### Single-line Comments
 Comments are lines of annotation within Ruby code that are ignored at runtime.
 
 A single-line comments starts with # character and they extent form # to the end of the line as follows:
@@ -214,6 +215,8 @@ When executed, the above program produces the following result:
 Hello, Ruby!
 ```
 
+##### Multi-line Comments 
+
 You can comment multiple lines using `=begin` and `=end` syntax as follows:
 ```ruby 
 #!/usr/bin/ruby 
@@ -227,4 +230,137 @@ But =begin and =end should come in the first line only.
 When executed, the above program produces the following result:
 ```
 Hello, Ruby!
+```
+
+#### Strings & Arrays
+
+A Strings object in Ruby holds and manipulates and arbitrary sequence one or more bytes.
+
+The simplest string literals are enclosed in single quotes(`' " apostrophe character ``).
+
+The text within the quote marks is the value of the string:
+```Ruby
+'This is single quote string'
+"This is double quote string"
+```
+
+If you need to place an apostrophe within a single-quoted string literal, precede it with a backslash, so that the Ruby interpreter does not think that it terminates the string:
+```Ruby
+'Won't you read O'Reilly's book'
+'Won\'t you read O\'Reilly's book'
+```
+
+1st line cause an error ruby interpreter will get confused between string it will display what is in the single or double quotes.
+
+Expression substitution is a means of embedding the value of any Ruby expression into a string using `#{}`.
+
+**Input**
+```Ruby
+#!/usr/bin/ruby
+
+x, y, z = 12, 36, 73
+puts "The value of x is #{x}"
+puts "The sum of x and y is #{x + y}"
+puts "The average was #{(x+y+z)/3}"
+```
+
+**Output**
+```ruby
+The value of x is 12.
+The sum of x and y is 48.
+The average was 40.
+```
+
+With general delimited strings, you can create strings inside a pair of matching through arbitrary delimiter characters,
+
+eg. `!`, `(`, `{`, `<` etc... preceded by a percent character(%).
+`Q`, `q` and `x` have special meanings.
+General delimited strings can be:
+```ruby
+%{Ruby is fun.} equivalent to "Ruby is fun."
+%Q{Ruby is fun.} equivalent to "Ruby is fun."
+%q{Ruby is fun.} equivalent to a single-quoted string
+%x!ls! equivalent to backtick command output `ls`
+```
+
+##### String Built-in Methods 
+
+We need to have an instance of String object to call a String method. Following is the way to create an instance if String object:
+
+```Ruby
+new [String.new(str = "")]
+```
+
+This will return a new string object containing a copy of str.
+
+Now, using str object, we can all use any available instance methods.
+
+```Ruby
+myStr = String.new("THIS IS TEST")
+foo = myStr.downcas
+puts "#{foo}"
+```
+
+**Output**
+```
+this is test
+```
+
+#### Arrays
+
+Ruby arrays are ordered, interger-indexed collection of any object.
+
+Each element in an array is associated with and referred  to by an index.
+
+Array indexing starts at `0`, as in C or Java.
+
+A negative index is assumed relative to the end of the array.
+
+That is, an index of -1 indicates the last element of the array,
+
+-2 is the next to last element in the array, and so on.
+
+##### Creating arrays
+
+There are many ways to create or initialize an array.
+```Ruby
+names = Array.new(20)
+```
+
+The array names now have size or length of 20 elements.
+
+One way is with the newclass methods:
+```ruby
+names = Array.new
+```
+
+#### key:value pair
+A Hash is a collection of key-value pairs like this:
+"employee" => "salary". It is similar to an Array.
+
+But indexing is done via arbitrary keys of any object type, not an integer index.
+
+The order in which you traverse a hash may seem arbitrary.
+
+It will generally not be in the insertion order.
+
+If you attempt to access a hash with a key that does not exist, the method will return nil.
+
+##### Creating Hashes 
+
+As with arrays, there are a variety of ways to create hashes.
+
+You can create an empty hash with the new class methods:
+```ruby
+months = Hash.new
+```
+
+You can also use new to create a hash with a default value, 
+Which is otherwise just nil:
+```
+months = Hash.new("month")
+```
+or
+```ruby
+months = Hash.new"month"
 ```
