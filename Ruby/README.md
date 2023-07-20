@@ -364,3 +364,67 @@ or
 ```ruby
 months = Hash.new"month"
 ```
+
+We need to have an instance of Hash object to call a Hash method.
+
+As we have seen, following is the way to create an instance of Hash object:
+```ruby
+Hash[[key =>|< value]* ]
+```
+or
+```ruby
+Hash.new [or] Hash.new(obj)
+```
+or
+```ruby
+Hash.new { |hash, key| block }
+```
+
+This will return a new hash populated with the given objects.
+
+Following are the public hash methods (assuming hash is an array object):
+1. **hash == other_hash**
+ - Tests whether two hashes are equal.
+ - On the basis of whether they have the same number of key-value pairs match the corresponding pair in each hash.
+ 
+2. **hash.[key]**
+- Using a key, reference a value from hash.
+- If the key is not found, returns a default value.
+
+3. **hash.[key] = value**
+- Associates the value given by value with the key given by key.
+
+4. **hash.clear**
+- Removes all key-value pairs from hash.
+
+5. **hash.default = obj**
+ - Sets a default value for hash.
+
+6.**hash.empty?**
+- Tests whether hash is empty (contains no key-value pairs ), returning true or false.
+
+7. **hash.has_value?**
+ - Tests whether hash contains the given value.
+
+8. **hash.sort**
+- Converts hash to a two-dimensional array containing arrays of key-value pairs, then sorts it as an array.
+
+9. **hash-to-hash**
+- Returns hash(self).
+
+Ranges occur everywhere!
+January to December, 0 to 9, lines 50 through 67, and so on.
+
+Ruby supports ranges and allow us to use ranges in a variety of ways:
+- Ranges as Sequences
+- Ranges as Conditions
+- Ranges as Intervals
+
+```Ruby
+(1..5)       # 1, 2, 3, 4, 5
+(1...5)      # 1, 2, 3, 4
+('a'..'d')   # 'a', 'b', 'c', 'd'
+```
+
+**Ranges as Condition**
+Ranges may also be used as con
