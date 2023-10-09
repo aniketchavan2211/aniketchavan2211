@@ -26,7 +26,7 @@ int main() {
     // switch case
     switch (operator) {
     case '+':
-        printf("Addition of %d + %d is: %d", num1, num2, sum);
+        printf("Addition of %d + % is: %d", num1, num2, num1+num2);
         break;
     case '-':
         printf("Difference of %d - %d is: %d", num1, num2, difference);
