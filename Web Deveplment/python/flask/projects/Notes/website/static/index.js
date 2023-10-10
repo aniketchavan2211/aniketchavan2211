@@ -1,1 +1,1 @@
-document.write("Hell0")
+document.write("Hell0");
