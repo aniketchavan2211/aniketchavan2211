@@ -1,11 +1,11 @@
-from flask import Blueprint
+from flask import Blueprint, render_template, request
 
 auth = Blueprint('auth', __name__)
 
 
-@auth.route('/login')
+@auth.route('/login', methods=['GET', 'POST'])
 def login():
-    return "<p> Log in </p>"
+    return render_template("login.html", boolean=True)
 
 
 @auth.route('/logout')
@@ -13,6 +13,23 @@ def logout():
     return "<p> Log out </p>"
 
 
-@auth.route('/sign-up')
+@auth.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
-    return "<p> Sign up </p>"
+    if request.method == 'POST':
+        email = request.form.get('email')
+        password1 = request.form.get('password1')
+        password2 = request.form.get('password2')
+
+        if len(email) < 4:
+            flash('Email must be greater than 4 characters.', category='success')
+        elif len(firstName) < 2:
+            flash('Email must be greater than 4 characters.', category='success')
+        elif password1 != password2:
+            pass
+        elif len(password1) < 7:
+            pass
+        else:
+            # add user to database
+            pass
+
+    return render_template("signup.html")
