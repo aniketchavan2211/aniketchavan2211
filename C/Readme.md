@@ -97,6 +97,13 @@ clang file.c
 ./a.out
 ```
 
+**To clear the screen**
+```bash
+#inlcude <stdlib.h>
+...
+system("clear");
+```
+
 #### Syntax 
 
 ```c
