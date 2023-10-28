@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 from .models import User
 from werkzeug.security import generate_password_hash, check_password_hash
-from . import db 
+from . import db
 from flask_login import login_user, login_required, logout_user, current_user
 
 auth = Blueprint('auth', __name__)
@@ -19,7 +19,7 @@ def login():
                 flash('Logged in Successfully!', category='success')
                 login_user(user, remember=True)
                 return redirect(url_for('views.home'))
-            else: 
+            else:
                 flash('Incorrect Password, try again', category='error')
         else:
             flash('Email does not exists', category='error')
@@ -29,7 +29,7 @@ def login():
 
 @auth.route('/logout')
 @login_required
-def logout():    
+def logout():
     logout_user()
     return redirect(url_for('auth.login'))
 
@@ -38,6 +38,7 @@ def logout():
 def sign_up():
     if request.method == 'POST':
         email = request.form.get('email')
+        first_name = request.form.get('first_name')
         password1 = request.form.get('password1')
         password2 = request.form.get('password2')
 
@@ -47,7 +48,7 @@ def sign_up():
             flash('Email already exists.', category='error')
         elif len(email) < 4:
             flash('Email must be greater than 4 characters.', category='error')
-        elif len(first_name) < 2:
+        elif len(str(first_name)) < int(2):
             flash('First Name must be greater than 1 characters.', category='error')
         elif password1 != password2:
             flash('Your Password don\'t match.', category='error')
@@ -58,7 +59,7 @@ def sign_up():
             new_user = User(email=email, first_name=first_name, password=generate_password_hash(password1, method='sha256'))
             db.session.add(new_user)
             db.session.commit()
-            login_user(user, remember=True)
+            login_user(new_user, remember=True)
 
             flash('Account created!', category='success')
 
