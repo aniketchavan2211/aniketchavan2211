@@ -1,4 +1,9 @@
 ![Github Intro Image](https://github.com/aniketchavan2211/Journey-start-from-here/blob/master/Images/Github%20Intro%20Image.png)
+
+### Bio 🧑‍💻
+
+![Bio](https://github.com/aniketchavan2211/aniketchavan2211/blob/ec3f4875a7f3dbe8612c2db31e43a9d166023b86/Images/bio.jpg)
+
 ### Hi there 👋
 
 ***This repository contain my own personal project & learning new things which I will mention in this repository...***
