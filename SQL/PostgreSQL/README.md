@@ -1,5 +1,11 @@
 ## PostgreSQL Database
 
+**Installation**
+```zsh
+sudo apt install posgresql -y
+```
+
+
 1. To `Start` Database Server:
 
 Please check superuser permission is need or not, If needed then use `sudo` and if not then skip it.
