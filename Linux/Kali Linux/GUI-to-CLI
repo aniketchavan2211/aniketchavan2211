@@ -1,0 +1,14 @@
+# to check which running by default GUI or CLI
+systemctl get-default
+
+# set to CLI
+systemctl set-default multi-user.target
+
+# Reboot the system
+sudo reboot
+
+# TO reset changes (switch back to GUI)
+systemctl set-default graphical.target
+
+# Reboot the system
+sudo reboot
