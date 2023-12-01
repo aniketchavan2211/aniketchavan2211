@@ -35,7 +35,7 @@ with open(path, 'rb') as file:
   blake2b.update(context)
   blake2s.update(context)
 
-  print('Text: hello\n')
+  print(f'Text: {context}\n')
   print('Hash Value:\n')
   print('{} : {}'.format(md5.name, md5.hexdigest()))
   print('{} : {}'.format(sha1.name, sha1.hexdigest()))
