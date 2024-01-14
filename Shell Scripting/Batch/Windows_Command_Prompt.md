@@ -149,7 +149,7 @@
 
   `netsh wlan show all` - all info in detailed.
 
-  `netsh wlan show profile [network] key-clear` - to show passwd>.
+  `netsh wlan show profile name="network"  key=clear` - to show passwd.
 
   `netsh wlan set hostednetwork mode=allow ssid=LINE key=[password]`
    =>`netsh wlan start hostednetwork` - creating hotspot in laptop.
