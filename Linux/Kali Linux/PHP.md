@@ -20,53 +20,57 @@ php --version
 
 3. Install Mariadb (Database Server)
 
-    1. Update and Upgrade
+1. Update and Upgrade
 
-    ```bash
-    sudo apt update -y && sudo apt upgrade -y
-    ```
+```bash
+sudo apt update -y && sudo apt upgrade -y
+```
 
-    2. Install Mariadb package from repo
+2. Install Mariadb package from repo
 
-    ```bash
-    sudo apt install mariadb-server
-    # if not working then
-    # apt search mariadb
-    # it will list all package with name mariadb
-    ```
+```bash
+sudo apt install mariadb-server
+# if not working then
+# apt search mariadb
+# it will list all package with name mariadb
+```
 
-    3. starting database server (Mariadb)
+3. starting database server (Mariadb)
 
-    Starting MariaDB Database Server using:
-    ```bash
-    sudo service start mariadb
-    ```
+Starting MariaDB Database Server using:
 
-    For Permanently changes
-    ```bash
-    # this will automatically start when ever system reboot.
-    sudo systemctl enable --now mariadb
-    ```
+```bash
+sudo service start mariadb
+```
 
-    4. create a user and database for first time
+For Permanently changes
 
-    ```bash
-    sudo mysql_secure_installation
+```bash
+# this will automatically start when ever system reboot.
+sudo systemctl enable --now mariadb
+```
 
-    # Answers the below questions
-    ```
+4. create a user and database for first time
 
-    then login with shell
+```bash
+sudo mysql_secure_installation
 
-    ```bash
-    mysql -u root -p
-    # accessing mysql shell loging as root user with password prompt
-    ```
-    execute Query.
-    ```mysql
-    ? 
-    # for help with mysql commands
-    ```
+# Answers the below questions
+```
+
+then login with shell
+
+```bash
+mysql -u root -p
+# accessing mysql shell loging as root user with password prompt
+```
+
+execute Query.
+
+```mysql
+? 
+# for help with mysql commands
+```
 
 4. Installation of PHPMyAdmin
 
@@ -77,31 +81,37 @@ sudo apt install phpmyadmin -y
 ```
 
 give nessessary permissions:
+
 ```
 sudo chown -R www-data:www-data /var/lib/phpmyadmin
 ```
 
 copy config template:
+
 ```bash
 sudo cp /usr/share/phpmyadmin/config.sample.inc.php  /usr/share/phpmyadmin/config.inc.php
 ```
 
 edit `/usr/share/phpmyadmin/config.inc.php` this file:
+
 ```bash
 sudo nano /usr/share/phpmyadmin/config.inc.php
 ```
 
 Change this token:
+
 ```bash
 $cfg['blowfish_secret'] = 'H2TxcGXxflSd8JwrXVlh6KW4s2rER63i';
 ```
 
 Check your token:
+
 ```bash
 sudo cat /var/lib/phpmyadmin/blowfish_secret.inc.php
 ```
 
 Add this line to config:
+
 ```bash
 $cfg['TempDir'] = '/var/lib/phpmyadmin/tmp';
 ```
@@ -109,6 +119,7 @@ $cfg['TempDir'] = '/var/lib/phpmyadmin/tmp';
 5. Configure Apache2 Web Server
 
 Quickstart
+
 ```
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install apache2
@@ -154,6 +165,7 @@ Alias /phpmyadmin /usr/share/phpmyadmin
 ```
 
 then restart the apache2 web server:
+
 ```bash
 sudo service apache2 restart
 ```
