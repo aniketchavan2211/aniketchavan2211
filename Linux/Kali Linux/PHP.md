@@ -20,57 +20,57 @@ php --version
 
 3. Install Mariadb (Database Server)
 
-1. Update and Upgrade
+ 1. Update and Upgrade
+ 
+ ```bash
+ sudo apt update -y && sudo apt upgrade -y 
+ ```
 
-```bash
-sudo apt update -y && sudo apt upgrade -y
-```
+ 2. Install Mariadb package from repo
 
-2. Install Mariadb package from repo
+ ```bash
+ sudo apt install mariadb-server
+ # if not working then
+ # apt search mariadb
+ # it will list all package with name mariadb
+ ```
 
-```bash
-sudo apt install mariadb-server
-# if not working then
-# apt search mariadb
-# it will list all package with name mariadb
-```
+ 3. starting database server (Mariadb)
 
-3. starting database server (Mariadb)
+ Starting MariaDB Database Server using:
 
-Starting MariaDB Database Server using:
+ ```bash
+ sudo service start mariadb
+ ```
 
-```bash
-sudo service start mariadb
-```
+ For Permanently changes
 
-For Permanently changes
+ ```bash
+ # this will automatically start when ever system reboot.
+ sudo systemctl enable --now mariadb
+ ```
 
-```bash
-# this will automatically start when ever system reboot.
-sudo systemctl enable --now mariadb
-```
+ 4. create a user and database for first time
 
-4. create a user and database for first time
+ ```bash
+ sudo mysql_secure_installation
+ 
+ # Answers the below questions
+ ```
 
-```bash
-sudo mysql_secure_installation
+ then login with shell
 
-# Answers the below questions
-```
+ ```bash
+ mysql -u root -p
+ # accessing mysql shell loging as root user with password prompt
+ ```
 
-then login with shell
+ execute Query.
 
-```bash
-mysql -u root -p
-# accessing mysql shell loging as root user with password prompt
-```
-
-execute Query.
-
-```mysql
-? 
-# for help with mysql commands
-```
+ ```mysql
+ ? 
+ # for help with mysql commands
+ ```
 
 4. Installation of PHPMyAdmin
 
