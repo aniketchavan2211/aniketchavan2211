@@ -1,12 +1,12 @@
 ## PHP8
 
-1. First Update and Upgrade System.
+### First Update and Upgrade System.
 
 ```bash
 sudo apt update -y && sudo apt full-upgrade -y
 ```
 
-2. Install PHP Package from repo
+### Install PHP Package from repo
 
 ```bash
 sudo apt -y install wget php php-cgi php-mysqli php-pear php-mbstring libapache2-mod-php php-common php-phpseclib php-mysql
@@ -18,7 +18,7 @@ Check PHP version by:
 php --version
 ```
 
-3. Install Mariadb (Database Server)
+### Install Mariadb (Database Server)
 
  1. Update and Upgrade
  
@@ -72,7 +72,7 @@ php --version
  # for help with mysql commands
  ```
 
-4. Installation of PHPMyAdmin
+### Installation of PHPMyAdmin
 
 
 Installing using `phpmyadmin` package from repo:
@@ -116,7 +116,7 @@ Add this line to config:
 $cfg['TempDir'] = '/var/lib/phpmyadmin/tmp';
 ```
 
-5. Configure Apache2 Web Server
+### Configure Apache2 Web Server
 
 Quickstart
 
@@ -173,4 +173,4 @@ sudo service apache2 restart
 Check PHPMyAdminpage
 go to `localhost:80/phpmyadmin` page or `127.0.0.1:80/phpmyadmin`
 both are same.
-`[IP:PORT/HOSTNAME/phpmyadmin]`
+`[IP:PORT/HOSTNAME/phpmyadmin]
