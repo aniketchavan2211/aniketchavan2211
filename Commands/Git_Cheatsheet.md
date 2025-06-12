@@ -44,7 +44,11 @@ This command creates an empty Git repository basically a `.git` directory with s
 
 `eval "$(ssh-agent -s)"` - Add you SSH key to the ssh-agent. Notice that you'll need to replace id_rsa in the command with the name of your private key file
      
-`ssh-add ~/.ssh/id_rsa`  - Key
+`ssh-add ~/.ssh/id_rsa`  - Key OR  `ssh-add ~/.ssh/id_ed25519` - another key
+
+`cat  ~/.ssh/id_rsa` OR `cat ~/.ssh/id_ed25519.pub` 
+
+add ssh key in **Profile > Settings > Acesses > SSH & GPG Keys >** add new key & paste key name the key.
 
 **check online** : [Connecting to Github with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
