@@ -18,7 +18,7 @@ Configuring Name & Email in Git
 
 The first thing you should do when you install Git is to set your username and email address.
 
-`git config --global user.name "Username"`
+`git config --global user.name "Username"` &&
 `git config --global user.email "Email"`
 
 you need to do this only if you pass the "--global" option,
@@ -27,7 +27,7 @@ you do on that system.
   
 Checking the Username & Email:
     
-`git config --global user.name`
+`git config --global user.name` &&
 `git config --global user.email`
 
 ### Initializing Git Repository or Reinitializing an exiting one 
