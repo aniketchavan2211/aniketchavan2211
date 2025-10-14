@@ -4,13 +4,11 @@ Title:
 Build and Test Time Division Multiplexing (TDM) Circuit
 
 
----
 
 1️⃣ Objective
 To study and demonstrate Time Division Multiplexing (TDM) and separate multiple digital signals using time slots.
 
 
----
 
 2️⃣ Apparatus / Components
 
@@ -23,16 +21,12 @@ Power Supply (5V)	Circuit operation
 Connecting Wires & Breadboard	Circuit assembly
 
 
-
----
-
 3️⃣ Theory
 Time Division Multiplexing (TDM) allows multiple signals to share a single channel by allocating unique time slots to each signal. Signals are transmitted sequentially; the receiver demultiplexes them by sampling at the correct time slot.
 
 Use: Telecommunication, digital data transmission.
 
 
----
 
 4️⃣ Algorithm / Steps
 
@@ -59,10 +53,9 @@ Use: Telecommunication, digital data transmission.
 
 
 
----
 
 5️⃣ Flowchart
-
+```
 ┌─────────────┐
 │   Start     │
 └─────┬───────┘
@@ -80,9 +73,8 @@ Demultiplex at receiver based on time slots
 Observe outputs
       │
 ──────┘ Loop / End
+```
 
-
----
 
 6️⃣ Observation & Output
 
@@ -95,19 +87,16 @@ Step	Input Signals	Output (Multiplexed)
 Observed Result: Multiple digital signals successfully transmitted over a single channel and separated at receiver using time slots.
 
 
----
 
 7️⃣ Result
 TDM circuit successfully built and tested; signals transmitted sequentially and correctly demultiplexed at the receiver.
 
 
----
 
 8️⃣ Conclusion
 TDM is an efficient method to transmit multiple signals over a single channel by assigning unique time slots. The experiment demonstrates signal multiplexing and demultiplexing.
 
 
----
 
 9️⃣ Viva / Oral Questions
 
@@ -118,18 +107,3 @@ Q	Answer
 3. Use of TDM?	Telecommunication and digital data transmission.
 4. Difference between TDM and FDM?	TDM → time slots; FDM → different frequencies.
 5. Hardware used for TDM?	Flip-flops, logic gates, function generator.
-
-
-
----
-
-✅ Slip TDM1 Completed
-
-
----
-
-If you like, I can also make similar journal slips for FSK and Hamming Code in the same format so your Sem 1 journal is ready.
-
-Do you want me to do that next?
-
-

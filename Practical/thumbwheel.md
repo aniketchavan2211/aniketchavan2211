@@ -2,7 +2,6 @@
 ## Thumbwheel & Seven Segment Display Interface Using 8051
 
 
----
 
 🔹 Set A – Slip TS1
 
@@ -10,13 +9,11 @@ Title:
 Thumbwheel & Seven Segment Display Interface to 8051 Microcontroller
 
 
----
 
 1️⃣ Objective
 To interface a thumbwheel switch with 8051 microcontroller and display the selected number on a 7-segment LED display.
 
 
----
 
 2️⃣ Apparatus / Components
 
@@ -31,7 +28,6 @@ Power Supply (5V)	Operates microcontroller
 
 
 
----
 
 3️⃣ Theory
 A thumbwheel switch provides a binary-coded decimal (BCD) output corresponding to the selected number.
@@ -44,7 +40,6 @@ Used in digital panels, counters, and input devices.
 
 
 
----
 
 4️⃣ Algorithm / Steps
 
@@ -68,10 +63,9 @@ Used in digital panels, counters, and input devices.
 
 
 
----
 
 5️⃣ Flowchart
-
+```
 ┌─────────────┐
 │   Start     │
 └─────┬───────┘
@@ -85,12 +79,11 @@ Convert BCD to 7-segment code
 Output to 7-segment display
       │
 Loop back
+```
 
-
----
 
 6️⃣ Program (8051 Embedded C)
-
+```c
 #include <reg51.h>
 
 unsigned char seg_code[10] = {0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
@@ -106,11 +99,10 @@ void main(void) {
         DISPLAY = seg_code[val]; // Display corresponding number
     }
 }
-
+```
 💡 Note: Adjust BCD reading according to thumbwheel wiring.
 
 
----
 
 7️⃣ Observation Table
 
@@ -126,13 +118,11 @@ Thumbwheel Setting	BCD Output	7-Segment Display
 Observed Result: Number selected on thumbwheel correctly displayed on 7-segment LED.
 
 
----
 
 8️⃣ Result
 Thumbwheel switch successfully interfaced to 8051. The selected digit is correctly displayed on 7-segment LED.
 
 
----
 
 9️⃣ Conclusion
 This practical demonstrates input device interfacing, BCD-to-7-segment conversion, and digital output control using 8051 microcontroller.
@@ -149,17 +139,3 @@ Q	Answer
 3. Ports used?	Input port for thumbwheel, output port for display.
 4. Applications?	Digital panels, counters, numerical input devices.
 5. What is the common cathode code for 0?	0x3F
-
-
-
----
-
-✅ Slip TS1 Completed
-
-
----
-
-Next, we can do the Event Counter using Opto-Coupler and 7-Segment / LCD, which is also very easy.
-
-Do you want me to proceed with that one now?
-

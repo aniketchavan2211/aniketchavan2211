@@ -4,13 +4,11 @@ Title:
 Build and Test Frequency Shift Keying (FSK) Circuit
 
 
----
 
 1️⃣ Objective
 To study Frequency Shift Keying (FSK) and generate digital signals transmitted using two distinct frequencies representing logic ‘0’ and logic ‘1’.
 
 
----
 
 2️⃣ Apparatus / Components
 
@@ -24,7 +22,6 @@ Breadboard & Connecting Wires	Circuit assembly
 
 
 
----
 
 3️⃣ Theory
 Frequency Shift Keying (FSK) is a digital modulation technique in which binary data is transmitted by changing the frequency of a carrier signal:
@@ -46,7 +43,6 @@ Transmitted signal switches between 2 kHz and 1 kHz according to the data sequen
 
 
 
----
 
 4️⃣ Algorithm / Steps
 
@@ -73,10 +69,9 @@ Transmitted signal switches between 2 kHz and 1 kHz according to the data sequen
 
 
 
----
 
 5️⃣ Flowchart
-
+```
 ┌─────────────┐
 │   Start     │
 └─────┬───────┘
@@ -94,9 +89,8 @@ Observe waveform on oscilloscope
 Check frequency shift matches input data
       │
 ──────┘ Loop / End
+```
 
-
----
 
 6️⃣ Circuit Diagram / Example Setup
 
@@ -124,7 +118,6 @@ Output observed on oscilloscope
 
 
 
----
 
 7️⃣ Observation Table
 
@@ -139,19 +132,16 @@ t4	0	1 kHz	Logic 0 → lower frequency
 Observed Result: Frequency of carrier correctly switches according to input digital data.
 
 
----
 
 8️⃣ Result
 FSK modulation successfully demonstrated. The transmitted digital data was represented accurately using two different carrier frequencies.
 
 
----
 
 9️⃣ Conclusion
 Frequency Shift Keying (FSK) allows digital signals to be transmitted over an analog channel using two distinct frequencies. The experiment demonstrates digital-to-analog modulation and how binary data is converted into frequency variations.
 
 
----
 
 🔟 Viva / Oral Questions
 
@@ -162,17 +152,3 @@ Q	Answer
 3. Difference between ASK and FSK?	ASK → amplitude changes; FSK → frequency changes.
 4. How do you generate FSK?	Using function generator, 555 timer, or XR-2206 IC modulator.
 5. What is the advantage of FSK?	Robust against noise, reliable digital data transmission.
-
-
-
----
-
-✅ Slip FSK1 Completed
-
-
----
-
-If you want, I can next make a detailed journal slip for Hamming Code (Error Detection & Correction) in the same format so your Sem 1 practicals journal is ready.
-
-Do you want me to do that?
-

@@ -1,7 +1,6 @@
 ## LCD Interfacing to 8051 Microcontroller
 
 
----
 
 🔹 Set A – Slip LCD1
 
@@ -9,13 +8,11 @@ Title:
 Interfacing 16x2 LCD with 8051 Microcontroller
 
 
----
 
 1️⃣ Objective
 To interface a 16x2 LCD module with 8051 microcontroller and display alphanumeric characters.
 
 
----
 
 2️⃣ Apparatus / Components
 
@@ -30,7 +27,6 @@ Power Supply (5V)	Operates microcontroller and LCD
 
 
 
----
 
 3️⃣ Theory
 LCD (Liquid Crystal Display) modules display characters, numbers, and symbols.
@@ -45,7 +41,6 @@ Common tasks: Initialize LCD, clear display, write data/characters.
 
 
 
----
 
 4️⃣ Algorithm / Steps
 
@@ -66,10 +61,9 @@ Common tasks: Initialize LCD, clear display, write data/characters.
 
 
 
----
 
 5️⃣ Flowchart
-
+```
 ┌─────────────┐
 │   Start     │
 └─────┬───────┘
@@ -86,11 +80,10 @@ Display characters
       │
 Loop/Next message
 
-
----
+```
 
 6️⃣ Program (8051 Embedded C, 8-bit mode)
-
+```c
 #include <reg51.h>
 
 sbit RS = P3^0;
@@ -137,11 +130,10 @@ void main(void) {
     lcd_string("SPPU Practical");
     while(1);
 }
-
+```
 💡 Note: Adjust pin mapping and delays according to your LCD and clock frequency.
 
 
----
 
 7️⃣ Observation Table
 
@@ -156,19 +148,16 @@ Step	Command/Data Sent	LCD Display
 Observed Result: LCD displays the string correctly.
 
 
----
 
 8️⃣ Result
 16x2 LCD successfully interfaced with 8051. Characters and messages can be displayed as per program.
 
 
----
 
 9️⃣ Conclusion
 This practical demonstrates LCD initialization, command/data communication, and alphanumeric display using a microcontroller.
 
 
----
 
 🔟 Viva / Oral Questions
 
@@ -179,17 +168,3 @@ Q	Answer
 3. Difference between command and data?	Command → configure LCD; Data → display characters.
 4. Which modes are used?	4-bit or 8-bit mode.
 5. Applications?	Digital displays, counters, microcontroller projects.
-
-
-
----
-
-✅ Slip LCD1 Completed
-
-
----
-
-Next, we can do Event Counter using Opto-Coupler and 7-Segment / LCD, which is also easy and closely related to LCD interfacing.
-
-Do you want me to proceed with that one?
-

@@ -1,7 +1,4 @@
-## 4️⃣  Computer Networking Practical – LAN Setup & Configuration
-
-
----
+## Computer Networking Practical – LAN Setup & Configuration
 
 🔹 Set A – Slip CN1
 
@@ -9,13 +6,11 @@ Title:
 Study of Computer Network Components, LAN Setup, and IP/MAC Configuration
 
 
----
 
 1️⃣ Objective
 To study network components, their interconnections, and configure a Local Area Network (LAN) with IP and MAC addressing.
 
 
----
 
 2️⃣ Apparatus / Components
 
@@ -30,7 +25,6 @@ LAN Simulator (Optional)	Cisco Packet Tracer, Packet Tracer, or real hardware
 
 
 
----
 
 3️⃣ Theory
 
@@ -59,7 +53,6 @@ MAC Address: Unique hardware identifier of NIC.
 
 
 
----
 
 4️⃣ Algorithm / Steps
 
@@ -86,10 +79,9 @@ MAC Address: Unique hardware identifier of NIC.
 
 
 
----
 
 5️⃣ Flowchart
-
+```
 ┌─────────────┐
 │   Start     │
 └─────┬───────┘
@@ -106,8 +98,7 @@ Verify LAN operation
       │
 ──────┘ End
 
-
----
+```
 
 6️⃣ Procedure / Commands Example
 
@@ -141,7 +132,6 @@ Static IP Assignment Example (Windows 10):
 
 
 
----
 
 7️⃣ Observation Table
 
@@ -155,19 +145,16 @@ PC3	192.168.1.4	00-1A-2B-3C-4D-60	Success
 Observed Result: All PCs successfully communicate over the LAN; IP and MAC addresses verified.
 
 
----
 
 8️⃣ Result
 Local Area Network successfully set up. IP addresses assigned and MAC addresses verified. Devices can communicate via ping.
 
 
----
 
 9️⃣ Conclusion
 Practical demonstrates LAN setup, IP/MAC addressing, and basic network testing. Understanding of switches, routers, NICs, and Ethernet cabling is reinforced.
 
 
----
 
 🔟 Viva / Oral Questions
 
@@ -178,19 +165,3 @@ Q	Answer
 3. Use of switch?	Connect multiple devices, forward data packets.
 4. How to test connectivity?	Using ping command between devices.
 5. Difference between router and switch?	Router → connects networks; Switch → connects devices within a LAN.
-
-
-
----
-
-✅ Slip CN1 Completed
-
-
----
-
-This completes your easy Sem 1 practicals and the computer networking practical.
-
-If you want, I can also prepare the remaining “moderate/hard” Sem 1 practicals like TDM, FSK, Hamming Code in one go, so your full Sem 1 journal is ready.
-
-Do you want me to do that next?
-

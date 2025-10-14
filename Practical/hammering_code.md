@@ -4,13 +4,11 @@ Title:
 Study of Error Detection and Correction Using Hamming Code Technique
 
 
----
 
 1️⃣ Objective
 To study Hamming Code for detecting and correcting single-bit errors in digital data transmission.
 
 
----
 
 2️⃣ Apparatus / Components
 
@@ -24,7 +22,6 @@ Power Supply (5V)	Circuit operation
 
 
 
----
 
 3️⃣ Theory
 Hamming Code is an error-detecting and correcting code used in digital communication.
@@ -41,7 +38,6 @@ Receiver recalculates parity → identifies error → flips erroneous bit → co
 
 
 
----
 
 4️⃣ Algorithm / Steps
 
@@ -74,10 +70,9 @@ Receiver recalculates parity → identifies error → flips erroneous bit → co
 
 
 
----
 
 5️⃣ Flowchart
-
+```
 ┌─────────────┐
 │   Start     │
 └─────┬───────┘
@@ -100,8 +95,7 @@ Observe corrected data
       │
 ──────┘ End
 
-
----
+```
 
 6️⃣ Example
 
@@ -117,7 +111,6 @@ Recalculate parity → error detected at bit 5 → correct it → 0111011
 Observation: Single-bit error successfully detected and corrected.
 
 
----
 
 7️⃣ Observation Table
 
@@ -130,19 +123,16 @@ Step	Data / Hamming Code	Observation
 
 
 
----
 
 8️⃣ Result
 Hamming Code technique successfully used to detect and correct single-bit errors in transmitted data.
 
 
----
 
 9️⃣ Conclusion
 Hamming Code is an effective method for error detection and correction, improving reliability in digital communication systems.
 
 
----
 
 🔟 Viva / Oral Questions
 
@@ -153,19 +143,3 @@ Q	Answer
 3. What types of errors can it correct?	Single-bit errors.
 4. Difference between parity and Hamming Code?	Parity detects only errors; Hamming can detect and correct single-bit errors.
 5. Use of Hamming Code?	Reliable digital communication, memory systems, network data transfer.
-
-
-
----
-
-✅ Slip HAM1 Completed
-
-
----
-
-Now you have TDM, FSK, and Hamming Code slips ready in full journal format for your Sem 1 practicals.
-
-If you want, I can also make a slip for “Event Counter using Opto-Coupler / Seven Segment Display”, which is another easy and common practical for Sem 1.
-
-Do you want me to do that next?
-
