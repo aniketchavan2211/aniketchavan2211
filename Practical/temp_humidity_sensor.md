@@ -1,5 +1,5 @@
 ## 6. Temperature and Humidity sensing using Arduino
-**Program: **
+**Program:**
 ```c
 #include <DHT11.h>
 DHT11 aniket(8);
