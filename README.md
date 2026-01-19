@@ -2,7 +2,7 @@
 
 ### Bio 🧑‍💻
 
-![Bio](https://github.com/aniketchavan2211/aniketchavan2211/blob/37e9ac576ae6761bbee3b0d6d99a71a8e99974bc/Images/bio.jpg)
+![Bio](Images/bio.jpg)
 
 ### Hi there 👋
 
