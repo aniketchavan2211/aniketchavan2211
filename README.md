@@ -1,4 +1,4 @@
-![Banner](Images/Github Intro Image.png)
+![Banner](https://github.com/aniketchavan2211/aniketchavan2211/blob/2cacbc64361b1378010d9ea27d81b71d3999ce28/Images/Github%20Intro%20Image.png)
 
 # 👋 Hello, Dev's && Pentester's
 
