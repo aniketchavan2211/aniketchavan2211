@@ -1,6 +1,6 @@
 # 👋 Hello, Dev's && Pentester's
 
-
+🚀 I’m a passionate cybersecurity professional and developer based in Maharashtra, India, actively involved in red/blue/purple team operations and open-source security projects. I build tools and applications at the intersection of offense & defense, especially leveraging AI/ML in security, Web & App development, and network/cloud infrastructure.
 
 - 🔭 **Current Focus:** Building AI-driven security tooling and automating pentesting & SOC workflows.  
 - 🌱 **Learning:** Offensive AI, Defensive AI, IoT/Hardware security, and advanced cloud/native security (Docker, Kubernetes).  
