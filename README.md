@@ -9,13 +9,13 @@
 
 ## 🔑 Key Projects  
 
-- **Password-Manager (PassMe)** – A secure password manager tool written in Python (uses industry-standard Fernet encryption)【8†L49-L52】. It can generate and store strong passwords safely.  
-- **Rusty-Nmap** – A fast asynchronous port scanner in Rust, inspired by Nmap. It supports TCP/UDP scans, host discovery, and concurrent scanning with smart payloads【10†L67-L71】.  
-- **Onion-Sites** – A privacy-focused news website (Tor hidden service) written in Rust. It’s a static, read-only news feed with a security-first design (strict validation, security headers, minimal attack surface)【27†L145-L153】.  
+- **Password-Manager (PassMe)** – A secure password manager tool written in Python (uses industry-standard Fernet encryption). It can generate and store strong passwords safely.  
+- **Rusty-Nmap** – A fast asynchronous port scanner in Rust, inspired by Nmap. It supports TCP/UDP scans, host discovery, and concurrent scanning with smart payloads.  
+- **Onion-Sites** – A privacy-focused news website (Tor hidden service) written in Rust. It’s a static, read-only news feed with a security-first design (strict validation, security headers, minimal attack surface).  
 - **CyberSec-Tools** – A toolkit repository containing various security utilities (TCP port scanners, keyloggers, vulnerability scanners, hash crackers, steganography tools, etc.) written in Python and C. It’s a sandbox for experimenting with offensive and defensive security code.  
 - **AI & ML Projects** – A collection of Rust-based AI/ML prototypes (e.g. a vector/matrix math engine) and extensive notes on AI, ML, Deep Learning, Data Science, LLMs, NLP, Big Data, etc. (see the *Artificial-Intelligence* repository for comprehensive learning materials on these topics).  
-- **CTF Write-ups** – Write-ups and reports from Capture-The-Flag competitions (TryHackMe, HackTheBox, picoCTF, OverTheWire/Wargames, etc.)【13†L230-L233】. Shares solutions, white papers, and vulnerability analyses from CTF challenges.  
-- **Russian-Roulette (Game)** – A terminal-based multiplayer Russian Roulette game written in Rust. It features a text-based UI using the `ratatui` crate and real-time key handling (no Enter key needed)【35†L37-L45】.  
+- **CTF Write-ups** – Write-ups and reports from Capture-The-Flag competitions (TryHackMe, HackTheBox, picoCTF, OverTheWire/Wargames, etc.). Shares solutions, white papers, and vulnerability analyses from CTF challenges.  
+- **Russian-Roulette (Game)** – A terminal-based multiplayer Russian Roulette game written in Rust. It features a text-based UI using the `ratatui` crate and real-time key handling (no Enter key needed).  
 
 Each project above is open-source and reflects my interests in cybersecurity, system programming, and development. You can explore their code and documentation on my profile. 
 
@@ -23,7 +23,7 @@ Each project above is open-source and reflects my interests in cybersecurity, sy
 
 - **Programming & Scripting:** Python, Rust, C/C++, Go, JavaScript/TypeScript, Bash, Zsh. Familiar with frameworks like Django/Flask, React, Node.js.  
 - **Security Domains:** Network/Web/Mobile/Cloud/IoT security, Penetration Testing, Vulnerability Assessment, SOC operations, Digital Forensics, Malware/Exploit Development.  
-- **Tools & Platforms:** Nmap, Burp Suite, Metasploit, Wireshark, SQLMap, Git, Docker, Kubernetes, AWS/GCP.  
+- **Tools & Platforms:** Nmap, Burp Suite, Metasploit, Wireshark, SQLMap, Git, Docker, Kubernetes, Azure/AWS/GCP.  
 - **Systems:** Linux (Kali, Debian/Ubuntu, Alpine), Windows, MacOS, Android, Embedded systems. Experience with virtualization (VMware, VirtualBox) and containment (containers, chroots).  
 - **AI & Data:** TensorFlow/PyTorch (basics), exploring how ML models can enhance offense/defense (e.g. automating log analysis, threat detection).  
 - **Other Interests:** Web development (HTML/CSS, web frameworks), game development (Rust/SDL), and graphics (Blender 3D fundamentals).  
@@ -42,6 +42,4 @@ Each project above is open-source and reflects my interests in cybersecurity, sy
 - [![LinkedIn](https://img.shields.io/badge/LinkedIn-Aniketchavan2211-blue?logo=linkedin)](https://www.linkedin.com/in/aniketchavan2211) 
 - [![GitLab](https://img.shields.io/badge/GitLab-aniketchavan2211-yellow?logo=gitlab)](https://gitlab.com/aniketchavan2211)  
 
-Feel free to reach out if you want to collaborate on security projects, bug bounties, or just chat about tech! 
-
-**References:** Descriptions of key projects are adapted from my own project READMEs【8†L49-L52】【10†L67-L71】【27†L145-L153】【33†L31-L34】【13†L230-L233】.
+Feel free to reach out if you want to collaborate on security projects, bug bounties, or just chat about tech!
